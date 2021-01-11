@@ -1,0 +1,519 @@
+body {
+    background: #eee;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header  */
+
+/* navbar */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(Images/camera1.jpg) no-repeat center center /cover;
+}
+
+.navbar {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .4));
+}
+
+.brand-link {
+    float: left;
+    margin-left: 35px;
+}
+
+.nav-brand {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .4s;
+
+}
+
+.nav-brand:hover {
+    color: #777;
+    transform: translateY(5px, 5px);
+}
+
+.list {
+    float: right;
+    margin: 35px 30px 0 0;
+    padding: 4px;
+}
+
+.nav-list {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.nav-list-item {
+    display: inline;    
+}
+
+.list-link {
+    color: white;  
+    text-decoration: none; 
+    margin-left: 30px;
+    font-weight: bold;
+    transition: all .4s;
+}
+
+.list-link:hover {
+    color: #777777;
+    transform: translateY(5px, 5px);
+}
+
+/* end of navbar  */
+
+/* banner */
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+}
+
+.banner-header {
+    color: #eee;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 62px;
+    animation-name: ASH;
+    animation-duration: 4s;
+}
+
+.banner-para {
+    color: #eee;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    animation-name: ASH;
+    animation-duration: 4s;
+    animation-delay: .7s;
+}
+
+@keyframes ASH {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* end of banner */
+
+/* end of header */
+
+/* mission-section */
+
+.mission {
+    padding: 5px;
+    background: #151f20;
+}
+
+.container {
+    margin: 15px;
+}
+
+.mission-title {
+    color: #eee;
+    text-align: center;
+}
+
+.mission-header {
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.underline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.mission-para {
+    font-size: larger;
+}
+
+.container-wrapper {
+    display: inline;
+}
+
+.progress {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+
+.mission-fa {
+    color: rgba(207, 34, 34, 0.726);
+    margin: 55px 15px 10px 15px;
+    padding: 5px;
+}
+
+.progress-header {
+    color: #eee;
+    text-transform: capitalize;
+    font-size: xx-large;
+}
+
+.progress-para {
+    color: #777777;
+    font-style: italic;
+}
+
+
+.img-div {
+    width: 45%;
+    text-align: right;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    animation-name: ASH-img;
+    animation-duration: 8s;
+}
+
+.text-div {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    color: #eee;
+    animation-name: ASH-text;
+    animation-duration: 4s;
+    animation-delay: .5s;
+}
+
+@keyframes ASH-img {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    } 100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ASH-text {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    } 100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.anima-header {
+    font-size: 3rem;
+}
+
+.anima-para {
+    font-size: 20px;
+}
+
+/* end of mission-section */
+
+/* Team-Section */
+
+.team {
+    background: rgb(68, 67, 67);
+    padding-top: 5px;
+}
+
+.team-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 25px 0 15px 0;
+}
+
+.overlay {
+    width: 250px;
+}
+
+.overlay-header {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: #222;
+    opacity: .7;
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s;
+    color: #eee;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.overlay-header:hover {
+    background: #222;
+    opacity: 1;
+}
+/* Team-Section */
+
+/* Gallery-Section */
+
+.gallery {
+    background: #eee;
+    padding: 5px;
+}
+
+.gallery-title {
+    color: #222;
+    text-align: center;
+}
+
+.gallery-header {
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.dark-underline {
+    width: 150px;
+    border: 3px solid #222;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.gallery-para {
+    font-size: larger;
+}
+
+.gallery-list {
+    list-style-type: none;
+    text-align: center;
+    margin: 70px 0 50px 0;
+}
+
+.gallery-list-item {
+    display: inline;
+    margin: 45px 0;
+}
+
+.gallery-span {
+    margin: 0 45px;
+}
+
+.gallery-list-link {
+    text-decoration: none;
+    color: #777777;
+    font-weight: bold;
+    font-size: xx-large;
+    transition: all .4s;
+    text-transform: uppercase;
+}
+.active {
+    color: rgb(40, 40, 131);
+}
+
+.gallery-list-link:hover {
+    opacity: .5;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* End of Gallery-Section */
+
+/* Contact-Section */
+
+.contact {
+    padding:25px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .3));
+}
+
+.container-div {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-div h1 {
+    font-size: 72px;
+    color: rgb(247, 202, 6);
+    margin-bottom: 0;
+}
+
+.container-div p {
+    font-size: large;
+    color: rgba(0, 0, 0, .5);
+    padding-bottom: 10px;
+}
+
+.contact-header-div {
+    color: #777;
+}
+
+.form-name {
+    padding: 20px;
+}
+
+.message {
+    padding: 20px;
+}
+
+.message textarea {
+    background: transparent;
+    border: 2px solid rgb(241, 198, 5);
+}
+
+.message ::placeholder {
+    font-size: larger;
+    padding: 5px;
+}
+
+.form-name input {
+    padding: 7px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(241, 198, 5);
+    box-shadow: none;
+    width: 400px;
+}
+
+.submit-button {
+    margin: 10px 0;
+    width: 410px;
+    padding: 7px 0;
+    background: transparent;
+    border: 2px solid rgb(247, 202, 6);
+    font-size: large;
+    color: rgb(247, 202, 6);
+    transition: all .8s;
+}
+
+.submit-button:hover {
+    background: rgb(247, 202, 6);
+    color: teal;
+    transform: translateY(3px, 4px);
+}
+/* End of Contact-Section */
+
+/* Footer-Section */
+
+.footer {
+    background: #1a1e1f;
+    padding: 15px;
+}
+
+.footer-wrapper {
+    border-bottom: 2px solid #eee;
+    display: flex;
+    color: white;
+    margin: 15px;
+}
+
+.about-us {
+    width: 450px;
+    margin: 10px;
+}
+
+.about-us p {
+    font-size: small;
+}
+
+.visit-us {
+    margin: 10px;
+    width: 150px;
+    text-align: left;
+}
+
+.visit-us ul {
+    text-align: start;
+    padding: 0;
+}
+
+.visit-us li {
+    list-style-type: none;
+}
+
+.visit-us ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.need-help {
+    margin: 10px;
+    width: 200px;
+}
+
+.need-help ul {
+    padding: 0;
+}
+
+.need-help li {
+    list-style-type: none;
+}
+
+.stay-here {
+    width: 450px;
+    margin: 10px;
+}
+
+.stay-here p {
+    font-size: small;
+}
+
+.search {
+    padding: 10px 0;
+}
+
+.search input {
+    padding: 5px 0;
+}
+
+.search-button {
+    padding: 5px;
+    background: red;
+    color: #eee;
+    font-weight: bold;
+    border: 0;
+}
+
+.font-list {
+    padding: 0;
+}
+
+.font-list li {
+    display: inline;
+}
+
+.google, .instagram, .youtube{
+    color: red;
+    margin-right: 5px;
+}
+
+.facebook, .twitter{
+    color: royalblue;
+    margin: 0 5px;
+}
+
+.footer-butttom {
+    text-align: center;
+    color: #eee;
+}
+/* End of Footer-Section */
